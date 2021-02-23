@@ -37,6 +37,9 @@
                             <constraint firstItem="DaU-r0-0US" firstAttribute="centerY" secondItem="AJp-va-jYT" secondAttribute="centerY" id="xFI-1e-jVP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="cxR-oq-wXT" kind="presentation" identifier="loginToHome" id="6fj-5C-FOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yO-B0-Pcp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +50,7 @@
             <objects>
                 <tableViewController id="V5q-0v-JxP" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="imS-ZV-QYF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -76,7 +79,7 @@
             <objects>
                 <navigationController id="cxR-oq-wXT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BPJ-6e-QoP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
