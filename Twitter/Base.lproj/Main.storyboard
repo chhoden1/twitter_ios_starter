@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="-306.39999999999998" y="162.3688155922039"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="AfQ-59-m1T">
             <objects>
                 <tableViewController id="V5q-0v-JxP" sceneMemberID="viewController">
@@ -71,7 +71,11 @@
                             <outlet property="delegate" destination="V5q-0v-JxP" id="gR2-lT-lE4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="BBv-fT-17c"/>
+                    <navigationItem key="navigationItem" title="Home" id="BBv-fT-17c">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="RnT-Nw-PEV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvF-db-MRh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +88,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BPJ-6e-QoP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.099002461400000005" green="0.66915375089999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="V5q-0v-JxP" kind="relationship" relationship="rootViewController" id="1jO-BP-NM8"/>
