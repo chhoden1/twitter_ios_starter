@@ -10,10 +10,8 @@ import UIKit
 
 class HomeTableTableViewController: UITableViewController {
 
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
-
-      
     }
     
     
@@ -23,16 +21,27 @@ class HomeTableTableViewController: UITableViewController {
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCellTableViewCell
+        
+       // cell.profileImageView =
+        cell.userNameLabel.text = "some name"
+        cell.tweetContent.text = "Something else"
+        
+        return cell
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1 // We have just 1 section for this project
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
 
     /*
