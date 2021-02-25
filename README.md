@@ -26,4 +26,5 @@ Here's a walkthrough of implemented user stories:
 <img src='http://g.recordit.co/cnitZyqSYI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Bonus User Stories -Video Walkthrough
+### User can pull to refresh and User can also load past tweets infinitely.
 <img src='http://g.recordit.co/V1Ci6BQ3f2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
