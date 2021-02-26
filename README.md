@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/eX6w5uFPdl.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/Th1UY9F7e3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Bonus User Stories -Video Walkthrough
 ### User can pull to refresh and User can also load past tweets infinitely.
