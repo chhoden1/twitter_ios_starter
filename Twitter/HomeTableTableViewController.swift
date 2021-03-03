@@ -19,6 +19,8 @@ class HomeTableTableViewController: UITableViewController {
             loadTweets()
             myRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
             tableView.refreshControl = myRefreshControl
+            self.tableView.rowHeight = UITableView.automaticDimension
+            self.tableView.estimatedRowHeight = 150
             //self.loadTweets()
     }
     
@@ -76,7 +78,6 @@ class HomeTableTableViewController: UITableViewController {
     
     
     
-    
     @IBAction func onLogoutButton(_ sender: Any) {
         TwitterAPICaller.client?.logout()
         self.dismiss(animated: true, completion: nil)
@@ -90,12 +91,14 @@ class HomeTableTableViewController: UITableViewController {
     
         cell.userNameLabel.text = user["name"] as? String
         cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
-        
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
+        cell.favorited = tweetArray[indexPath.row]["favorited"] as! Bool
         let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageUrl!)
         if let imageData = data{
         cell.profileImageView.image = UIImage(data: imageData)
         }
+        cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
         
         return cell
     }
