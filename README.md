@@ -27,7 +27,6 @@ Here's a walkthrough of implemented user stories:
 
 
 
-##
 # Twitter Part I - Tweet
 
 **Tweet** is a basic twitter app to read your tweets.
